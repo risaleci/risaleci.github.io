@@ -118,23 +118,44 @@
   <!-- Cüz Kutuları -->
   <div class="container hidden" id="cuz-container">
     <!-- Cüz 1–30 -->
-    <script>
-      for (let i = 1; i <= 30; i++) {
-        const start = String((i - 1) * 21 + 1).padStart(3, '0');
-        const end = String(i * 21).padStart(3, '0');
-        document.write(`
-          <div class="pdf-box">
-            <a href="./kuran.pdf/kuran-${start}-${end}.pdf" target="_blank">📄 Cüz ${i}</a>
-          </div>
-        `);
-      }
-    </script>
+    <!-- Her cüz kutusu ayrı ayrı yazılmıştır -->
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-001-021.pdf" target="_blank">📄 Cüz 1</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-022-042.pdf" target="_blank">📄 Cüz 2</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-043-062.pdf" target="_blank">📄 Cüz 3</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-063-082.pdf" target="_blank">📄 Cüz 4</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-083-102.pdf" target="_blank">📄 Cüz 5</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-103-122.pdf" target="_blank">📄 Cüz 6</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-123-142.pdf" target="_blank">📄 Cüz 7</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-143-162.pdf" target="_blank">📄 Cüz 8</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-163-182.pdf" target="_blank">📄 Cüz 9</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-183-202.pdf" target="_blank">📄 Cüz 10</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-203-222.pdf" target="_blank">📄 Cüz 11</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-223-242.pdf" target="_blank">📄 Cüz 12</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-243-262.pdf" target="_blank">📄 Cüz 13</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-263-282.pdf" target="_blank">📄 Cüz 14</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-283-302.pdf" target="_blank">📄 Cüz 15</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-303-322.pdf" target="_blank">📄 Cüz 16</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-323-342.pdf" target="_blank">📄 Cüz 17</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-343-362.pdf" target="_blank">📄 Cüz 18</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-363-382.pdf" target="_blank">📄 Cüz 19</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-383-402.pdf" target="_blank">📄 Cüz 20</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-403-422.pdf" target="_blank">📄 Cüz 21</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-423-442.pdf" target="_blank">📄 Cüz 22</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-443-462.pdf" target="_blank">📄 Cüz 23</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-463-482.pdf" target="_blank">📄 Cüz 24</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-483-502.pdf" target="_blank">📄 Cüz 25</a></div>
+
+ <div class="pdf-box"><a href="./kuran.pdf/kuran-503-522.pdf" target="_blank">📄 Cüz 26</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-523-542.pdf" target="_blank">📄 Cüz 27</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-543-562.pdf" target="_blank">📄 Cüz 28</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-563-582.pdf" target="_blank">📄 Cüz 29</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-583-602.pdf" target="_blank">📄 Cüz 30</a></div>
   </div>
 
   <script>
     function toggleCuzler() {
-      const cuzContainer = document.getElementById("cuz-container");
-      cuzContainer.classList.toggle("hidden");
+      const container = document.getElementById('cuz-container');
+      container.classList.toggle('hidden');
     }
   </script>
 </body>
