@@ -11,7 +11,7 @@
       padding: 40px;
       margin: 0;
     }
-    h1 {
+    h1, h2 {
       text-align: center;
       color: #333;
     }
@@ -93,32 +93,23 @@
   </style>
 </head>
 <body>
-  <h1>📚 Said Nursî (1878 - 23 Mart 1960) PDF İndeks Sayfası</h1>
+  <h1>📚 Said Nursî (1878 - 1960) PDF İndeks Sayfası</h1>
 
+  <!-- Diğer PDF'ler -->
   <div class="container">
-    <div class="pdf-box">
-      <a href="./dosyalar/cevsen-meal.pdf" target="_blank">📄 Cevşen ve Meali PDF</a>
-    </div>
-    <div class="pdf-box">
-      <a href="./dosyalar/Tesbihat.pdf" target="_blank">📄 Tesbihat PDF</a>
-    </div>
-    <div class="pdf-box">
-      <a href="./dosyalar/yemekduasi-a4.pdf" target="_blank">📄 Yemek Duası PDF</a>
-    </div>
-    <div class="pdf-box">
-      <a href="./dosyalar/ASA-KITAB.pdf" target="_blank">📄 ASA-KITAB PDF</a>
-    </div>
+    <div class="pdf-box"><a href="./dosyalar/cevsen-meal.pdf" target="_blank">📄 Cevşen ve Meali</a></div>
+    <div class="pdf-box"><a href="./dosyalar/Tesbihat.pdf" target="_blank">📄 Tesbihat</a></div>
+    <div class="pdf-box"><a href="./dosyalar/yemekduasi-a4.pdf" target="_blank">📄 Yemek Duası</a></div>
+    <div class="pdf-box"><a href="./dosyalar/ASA-KITAB.pdf" target="_blank">📄 ASA-KITAB</a></div>
   </div>
 
-  <!-- Kur’an Cüzleri Başlığı -->
+  <!-- Kur’an Cüzleri -->
   <div class="container">
     <div class="toggle-box" onclick="toggleCuzler()">📖 Kur’an-ı Kerim Cüzleri (Tıklayınız)</div>
   </div>
 
-  <!-- Cüz Kutuları -->
   <div class="container hidden" id="cuz-container">
     <!-- Cüz 1–30 -->
-    <!-- Her cüz kutusu ayrı ayrı yazılmıştır -->
     <div class="pdf-box"><a href="./kuran.pdf/kuran-001-021.pdf" target="_blank">📄 Cüz 1</a></div>
     <div class="pdf-box"><a href="./kuran.pdf/kuran-022-042.pdf" target="_blank">📄 Cüz 2</a></div>
     <div class="pdf-box"><a href="./kuran.pdf/kuran-043-062.pdf" target="_blank">📄 Cüz 3</a></div>
@@ -144,14 +135,15 @@
     <div class="pdf-box"><a href="./kuran.pdf/kuran-443-462.pdf" target="_blank">📄 Cüz 23</a></div>
     <div class="pdf-box"><a href="./kuran.pdf/kuran-463-482.pdf" target="_blank">📄 Cüz 24</a></div>
     <div class="pdf-box"><a href="./kuran.pdf/kuran-483-502.pdf" target="_blank">📄 Cüz 25</a></div>
-
- <div class="pdf-box"><a href="./kuran.pdf/kuran-503-522.pdf" target="_blank">📄 Cüz 26</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-503-522.pdf" target="_blank">📄 Cüz 26</a></div>
     <div class="pdf-box"><a href="./kuran.pdf/kuran-523-542.pdf" target="_blank">📄 Cüz 27</a></div>
-    <div class="pdf-box"><a href="./kuran.pdf/kuran-543-562.pdf" target="_blank">📄 Cüz 28</a></div>
+    
+  <div class="pdf-box"><a href="./kuran.pdf/kuran-543-562.pdf" target="_blank">📄 Cüz 28</a></div>
     <div class="pdf-box"><a href="./kuran.pdf/kuran-563-582.pdf" target="_blank">📄 Cüz 29</a></div>
-    <div class="pdf-box"><a href="./kuran.pdf/kuran-583-602.pdf" target="_blank">📄 Cüz 30</a></div>
+    <div class="pdf-box"><a href="./kuran.pdf/kuran-583-606.pdf" target="_blank">📄 Cüz 30</a></div>
   </div>
- <!-- Risale-i Nur Külliyatı -->
+
+  <!-- Risale-i Nur Külliyatı -->
   <h2>📘 Risale-i Nur Külliyatı</h2>
   <div class="container">
     <div class="pdf-box"><a href="./risale/ASA-KİTAB (1).pdf" target="_blank">📄 ASA-KİTAB</a></div>
@@ -169,31 +161,12 @@
     <div class="pdf-box"><a href="./risale/Şualar KİTAB.pdf" target="_blank">📄 Şualar</a></div>
     <div class="pdf-box"><a href="./risale/TARİHÇE KİTAB.pdf" target="_blank">📄 Tarihçe</a></div>
   </div>
+
   <script>
     function toggleCuzler() {
-      const container = document.getElementById('cuz-container');
-      container.classList.toggle('hidden');
+      const cuzContainer = document.getElementById("cuz-container");
+      cuzContainer.classList.toggle("hidden");
     }
-
-<!-- Risale-i Nur PDF'leri -->
-<div class="container">
-  <div class="pdf-box"><a href="./risale/ASA-KİTAB (1).pdf" target="_blank">📄 ASA-KİTAB</a></div>
-  <div class="pdf-box"><a href="./risale/BARLA LAHİKASI KİTAB.pdf" target="_blank">📄 Barla Lahikası</a></div>
-  <div class="pdf-box"><a href="./risale/EMİRDAĞ L. 1-2 KİTAB.pdf" target="_blank">📄 Emirdağ L. 1-2</a></div>
-  <div class="pdf-box"><a href="./risale/İ'İCAZ.pdf" target="_blank">📄 İ'İcaz</a></div>
-  <div class="pdf-box"><a href="./risale/iman ve kufur muvazenesi KİTAB.pdf" target="_blank">📄 İman ve Küfür Muvazenesi</a></div>
-  <div class="pdf-box"><a href="./risale/KASTAMONU KİTAB.pdf" target="_blank">📄 Kastamonu</a></div>
-  <div class="pdf-box"><a href="./risale/LEM'ALAR KİTAB.pdf" target="_blank">📄 Lem'alar</a></div>
-  <div class="pdf-box"><a href="./risale/Mektubat KİTAB.pdf" target="_blank">📄 Mektubat</a></div>
-  <div class="pdf-box"><a href="./risale/MESNEVİ KİTAB.pdf" target="_blank">📄 Mesnevî</a></div>
-  <div class="pdf-box"><a href="./risale/Muhakemat KİTAB.pdf" target="_blank">📄 Muhakemat</a></div>
-  <div class="pdf-box"><a href="./risale/SİKKE Ü TASDİKİ GAYBİ Kitab.pdf" target="_blank">📄 Sikke-i Tasdik-i Gaybî</a></div>
-  <div class="pdf-box"><a href="./risale/SÖZLER KİTAB.pdf" target="_blank">📄 Sözler</a></div>
-  <div class="pdf-box"><a href="./risale/Şualar KİTAB.pdf" target="_blank">📄 Şualar</a></div>
-  <div class="pdf-box"><a href="./risale/TARİHÇE KİTAB.pdf" target="_blank">📄 Tarihçe</a></div>
-</div>
-
-
   </script>
 </body>
 </html>
