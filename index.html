@@ -103,13 +103,12 @@
     <div class="pdf-box"><a href="./dosyalar/ASA-KITAB.pdf" target="_blank">📄 ASA-KITAB</a></div>
   </div>
 
-  <!-- Kur’an Cüzleri -->
-  <div class="container">
-    <div class="toggle-box" onclick="toggleCuzler()">📖 Kur’an-ı Kerim Cüzleri (Tıklayınız)</div>
-  </div>
+<!-- Kur’an Cüzleri Başlığı -->
+<div class="container">
+  <div class="toggle-box" onclick="toggleCuzler()">📖 Kur’an-ı Kerim Cüzleri (Tıklayınız)</div>
+</div>
 
-  <div class="container hidden" id="cuz-container">
-    <!-- Cüz 1–30 -->
+<div class="container hidden" id="cuz-container">
     <div class="pdf-box"><a href="./kuran.pdf/kuran-001-021.pdf" target="_blank">📄 Cüz 1</a></div>
     <div class="pdf-box"><a href="./kuran.pdf/kuran-022-042.pdf" target="_blank">📄 Cüz 2</a></div>
     <div class="pdf-box"><a href="./kuran.pdf/kuran-043-062.pdf" target="_blank">📄 Cüz 3</a></div>
@@ -143,9 +142,12 @@
     <div class="pdf-box"><a href="./kuran.pdf/kuran-583-606.pdf" target="_blank">📄 Cüz 30</a></div>
   </div>
 
-  <!-- Risale-i Nur Külliyatı -->
-  <h2>📘 Risale-i Nur Külliyatı</h2>
-  <div class="container">
+<!-- Risale-i Nur Başlığı -->
+<div class="container">
+  <div class="toggle-box" onclick="toggleRisale()">📘 Risale-i Nur Külliyatı (Tıklayınız)</div>
+</div>
+
+<div class="container hidden" id="risale-container">
     <div class="pdf-box"><a href="./risale/ASA-KİTAB (1).pdf" target="_blank">📄 ASA-KİTAB</a></div>
     <div class="pdf-box"><a href="./risale/BARLA LAHİKASI KİTAB.pdf" target="_blank">📄 Barla Lahikası</a></div>
     <div class="pdf-box"><a href="./risale/EMİRDAĞ L. 1-2 KİTAB.pdf" target="_blank">📄 Emirdağ L. 1-2</a></div>
@@ -162,11 +164,14 @@
     <div class="pdf-box"><a href="./risale/TARİHÇE KİTAB.pdf" target="_blank">📄 Tarihçe</a></div>
   </div>
 
-  <script>
-    function toggleCuzler() {
-      const cuzContainer = document.getElementById("cuz-container");
-      cuzContainer.classList.toggle("hidden");
-    }
-  </script>
+<!-- JavaScript -->
+<script>
+  function toggleCuzler() {
+    document.getElementById("cuz-container").classList.toggle("hidden");
+  }
+  function toggleRisale() {
+    document.getElementById("risale-container").classList.toggle("hidden");
+  }
+</script>
 </body>
 </html>
