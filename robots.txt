@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://risaleci.github.io/sitemap.xml
