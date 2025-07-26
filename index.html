@@ -171,6 +171,21 @@
   <div class="pdf-box"><a href="./risale/TARİHÇE KİTAB.pdf" target="_blank">📄 Tarihçe</a></div>
 </div>
 
+
+<!-- Sure Ezberleme Başlığı -->
+<div class="container">
+  <div class="toggle-box" onclick="toggleSureler()">🧠 Sure Ezberleme Kutusu (Tıklayınız)</div>
+</div>
+
+<div class="container hidden" id="sure-container">
+  <div class="pdf-box"><a href="./sureler/fatiha-suresi.pdf" target="_blank">📄 Fatiha Suresi</a></div>
+  <div class="pdf-box"><a href="./sureler/ayetelkursi.pdf" target="_blank">📄 Ayetel Kürsi</a></div>
+  <div class="pdf-box"><a href="./sureler/ihlas-suresi.pdf" target="_blank">📄 İhlas Suresi</a></div>
+  <div class="pdf-box"><a href="./sureler/felak-suresi.pdf" target="_blank">📄 Felak Suresi</a></div>
+  <div class="pdf-box"><a href="./sureler/nas-suresi.pdf" target="_blank">📄 Nas Suresi</a></div>
+</div>
+
+
 <!-- JavaScript -->
 <script>
   function toggleCuzler() {
@@ -179,6 +194,11 @@
   function toggleRisale() {
     document.getElementById("risale-container").classList.toggle("hidden");
   }
+  function toggleSureler() {
+    document.getElementById("sure-container").classList.toggle("hidden");
+  }
+
+
 </script>
 </body>
 </html>
